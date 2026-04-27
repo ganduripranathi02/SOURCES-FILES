@@ -1,0 +1,7 @@
+# Backend
+docker build -t ananya-backend ./backend
+docker run -p 5000:5000 -e DB_CON_STR="your_aiven_conn_str" ananya-backend
+
+# Frontend
+docker build -t ananya-frontend ./frontend
+docker run -p 5000:5000 ananya-frontend
